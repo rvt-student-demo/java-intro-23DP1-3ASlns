@@ -15,4 +15,31 @@ public class PaymentCard {
     }
 }
 
+public void eatAffordably() {
+    // write code here
+    double eatAffordably = 2.60;
+    if (this.balance >= eatAffordably){
+        this.balance -= eatAffordably;
+    }
+}
 
+public void eatHeartily() {
+    // write code here
+    double eatHeartily = 4.60;
+    if (this.balance >= eatHeartily){
+        this.balance -= eatHeartily;
+    }
+}
+
+public double getBalance(){
+    return this.balance;
+}
+
+public void addMoney(double amount) {
+    if (amount > 0) {
+        this.balance += amount;
+        if (this.balance > 150) {
+            this.balance = 150;
+        }
+    }
+}
